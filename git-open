@@ -142,7 +142,7 @@ else
 
   # Resolve sshconfig aliases
   if [[ -e "$ssh_config" ]]; then
-    domain_resolv=$(ssh_resolve "$domain")
+    domain_resolv='github.com'
     if [[ ! -z "$domain_resolv" ]]; then
       domain="$domain_resolv"
     fi
